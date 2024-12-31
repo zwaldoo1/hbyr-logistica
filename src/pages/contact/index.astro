@@ -1,0 +1,18 @@
+---
+import ContactHero from "../../components/contact/ContactHero";
+import ContactInfo from "../../components/contact/ContactInfo";
+import ContactForm from "../../components/contact/ContactForm";
+import ContactMap from "../../components/contact/ContactMap";
+import ContactFAQ from "../../components/contact/ContactFAQ";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+   <div class="min-h-screen">
+    <ContactHero client:load/>
+    <ContactInfo client:load/>
+    <ContactForm client:load/>
+    <ContactMap client:load/>
+    <ContactFAQ client:load/>
+  </div>
+</Layout>
