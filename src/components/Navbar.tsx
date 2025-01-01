@@ -46,6 +46,7 @@ const Navbar = () => {
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
+        
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden">
@@ -60,7 +61,7 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
-              <a className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white mt-4">
+              <a className="w-full bg-gradient-to-r py-3 px-10 flex justify-center items-center from-purple-600 to-pink-600 text-white mt-4">
                 <Mail className="mr-2 h-4 w-4" />
                 Contáctanos
               </a>
