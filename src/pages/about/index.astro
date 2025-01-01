@@ -8,6 +8,7 @@ import Achievements from "../../components/about/Achievements";
 import Partners from "../../components/about/Partners";
 import Culture from "../../components/about/Culture";
 import Layout from "../../layouts/Layout.astro";
+import {ScrollToTop} from '../../components/ScrollToTop'
 ---
 
 <Layout>
@@ -20,5 +21,6 @@ import Layout from "../../layouts/Layout.astro";
         <Achievements client:load/>
         <Culture client:load/>
         <Partners client:load/>
+        <ScrollToTop client:load/>
       </div>
 </Layout>

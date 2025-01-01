@@ -5,6 +5,7 @@ import ServicesList from "../../components/services/ServicesList";
 import ServicesPricing from "../../components/services/ServicesPricing";
 import ServicesProcess from "../../components/services/ServicesProcess";
 import ServicesCTA from "../../components/services/ServicesCTA";
+import {ScrollToTop} from '../../components/ScrollToTop'
 ---
 
 <Layout>
@@ -14,5 +15,6 @@ import ServicesCTA from "../../components/services/ServicesCTA";
       <ServicesProcess  client:load/>
       <ServicesPricing  client:load/>
       <ServicesCTA client:load />
+      <ScrollToTop client:load/>
     </div>
 </Layout>

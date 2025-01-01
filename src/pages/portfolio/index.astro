@@ -1,10 +1,12 @@
 ---
 import PortfolioSection from "../../components/portfolio/PortfolioSection";
 import Layout from "../../layouts/Layout.astro";
+import {ScrollToTop} from '../../components/ScrollToTop'
 ---
 
 <Layout>
      <div class="min-h-screen">
         <PortfolioSection client:load/>
+        <ScrollToTop client:load/>
     <div/>
 </Layout>
