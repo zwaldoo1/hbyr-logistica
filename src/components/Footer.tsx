@@ -59,7 +59,6 @@ const Footer = () => {
                 { text: "Nosotros", path: "/about" },
                 { text: "Servicios", path: "/services" },
                 { text: "Portfolio", path: "/portfolio" },
-                { text: "Testimonios", path: "/testimonials" },
                 { text: "Contacto", path: "/contact" },
                 { text: "Privacidad", path: "/privacy" },
               ].map((link) => (
