@@ -60,7 +60,6 @@ const Footer = () => {
                 { text: "Servicios", path: "/services" },
                 { text: "Portfolio", path: "/portfolio" },
                 { text: "Testimonios", path: "/testimonials" },
-                { text: "FAQ", path: "/faq" },
                 { text: "Contacto", path: "/contact" },
                 { text: "Privacidad", path: "/privacy" },
               ].map((link) => (
