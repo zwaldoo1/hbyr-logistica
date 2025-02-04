@@ -2,10 +2,9 @@
 
 Lumos Creatives es una agencia creativa especializada en diseño gráfico, marketing digital, desarrollo web y branding. Este repositorio contiene el código fuente del sitio web oficial de la empresa.
 
-## **Sitio en Producción**
 
-Puedes visitar el sitio web en el siguiente enlace:  
-[https://lumoscreatives.netlify.app](https://lumoscreatives.netlify.app)
+## 🔗 Live Demo  
+🚀 **[Lumos Creatives](https://lumoscreatives.netlify.app/)**  
 
 ---
 
