@@ -27,13 +27,12 @@ const History = () => {
             Nuestra Historia
           </motion.span>
           <h2 className="text-3xl md:text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-pink-600">
-            Una trayectoria de excelencia
+HBYR Logística y Transporte
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed mb-12">
-            Desde nuestros humildes inicios hasta convertirnos en líderes del sector,
-            nuestra historia es un testimonio de perseverancia, innovación y compromiso
-            con la excelencia. Cada paso en nuestro camino ha estado guiado por la
-            visión de crear un impacto positivo en la sociedad.
+Desde nuestros inicios hasta consolidarnos como referentes en logística y transporte,
+nuestra historia refleja años de esfuerzo, innovación y compromiso con la excelencia operativa.
+Cada etapa ha sido impulsada por la misión de entregar soluciones confiables que marquen la diferencia en el día a día de nuestros clientes y en el desarrollo de las industrias que servimos.
           </p>
           <motion.div
             whileHover={{ scale: 1.05 }}

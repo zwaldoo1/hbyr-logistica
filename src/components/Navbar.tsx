@@ -19,7 +19,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="/" className="flex items-center">
             <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Lumos Creatives
+              HBYR Logistica y Transporte
             </span>
           </a>
           {/* Desktop Menu */}

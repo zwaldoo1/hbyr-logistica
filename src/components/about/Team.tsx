@@ -53,15 +53,18 @@ const Team = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium mb-4">
-            Nuestro Equipo
-          </span>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Mentes creativas detrás de Lumos
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Un equipo apasionado y diverso, unido por la misión de crear soluciones extraordinarias.
-          </p>
+<div className="text-center mb-16">
+  <span className="inline-block px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 rounded-full text-sm font-semibold mb-4 dark:from-purple-800 dark:to-pink-800 dark:text-white">
+    El Corazón de HBYR
+  </span>
+  <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
+    Mentes creativas detrás de <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">HBYR</span>
+  </h2>
+  <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+    Un equipo diverso y apasionado, comprometido con la misión de crear soluciones digitales que transforman negocios.
+  </p>
+</div>
+
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

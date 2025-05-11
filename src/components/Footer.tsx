@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Company */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Lumos Creatives</h3>
+            <h3 className="text-lg font-semibold">HBYR Logistica y Transporte</h3>
             <p className="text-muted-foreground">
               Nos dedicamos a transformar ideas en resultados excepcionales.
             </p>

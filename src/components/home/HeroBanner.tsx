@@ -23,13 +23,13 @@ const HeroBanner = () => {
           >
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                Iluminamos tus ideas,
+               HBYR 
               </span>
               <br />
-              transformamos tu marca.
+              LOGISTICA Y TRANSPORTE 
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl">
-              Ofrecemos soluciones creativas en diseño, marketing y desarrollo web para hacer crecer tu marca.
+              20 años brindando soluciones en transporte, distribución y almacenaje a nivel nacional
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button

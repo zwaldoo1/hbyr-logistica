@@ -35,14 +35,14 @@ const Culture = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium mb-4">
-            Nuestra Cultura
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 rounded-full text-sm font-semibold mb-4 dark:from-purple-800 dark:to-pink-800 dark:text-white">
+            La Cultura de HBYR
           </span>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Construyendo un ambiente de trabajo excepcional
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
+            Creando un ambiente de trabajo excepcional en <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">HBYR</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Nuestra cultura es el corazón de nuestra empresa, definiendo quiénes somos y cómo trabajamos juntos.
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            Nuestra cultura es el corazón de HBYR, definiendo quiénes somos y cómo trabajamos juntos para crear soluciones innovadoras.
           </p>
         </motion.div>
 
@@ -61,10 +61,10 @@ const Culture = () => {
                   {point.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                     {point.title}
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 dark:text-gray-300">
                     {point.description}
                   </p>
                 </div>
@@ -80,11 +80,11 @@ const Culture = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             "La cultura no es solo lo que decimos, es lo que hacemos. Cada día nos esforzamos por vivir nuestros valores
             y crear un ambiente donde todos puedan prosperar y dar lo mejor de sí mismos."
           </p>
-          <p className="mt-4 text-purple-600 font-medium">- Ana García, CEO</p>
+          <p className="mt-4 text-purple-600 dark:text-purple-400 font-medium">- Ana García, CEO</p>
         </motion.div>
       </div>
     </section>

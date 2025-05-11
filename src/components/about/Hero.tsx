@@ -25,12 +25,16 @@ const Hero = () => {
             Nuestra Misión
           </motion.span>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
-            Transformando el futuro
-            <br /> a través de la innovación
+Transformando la logística  
+<br /> a través de la eficiencia y la confianza
+
           </h1>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-8 leading-relaxed">
-            Nos dedicamos a crear soluciones que impulsan el progreso y mejoran la vida de las personas,
-            siempre con un compromiso inquebrantable con la excelencia y la sostenibilidad.
+<p>
+HBYR Logística y Transporte cuenta con más de 20 años de trayectoria en el rubro de la distribución profesional, consolidándose como un actor confiable y eficiente en el mercado. Nos especializamos en el transporte de alimentos e insumos clínicos, ofreciendo un servicio operativo 24/7 con una flota propia compuesta por 7 vehículos, adecuados para distintos tipos de carga.
+
+</p>
+
           </p>
           <motion.div
             initial={{ opacity: 0 }}

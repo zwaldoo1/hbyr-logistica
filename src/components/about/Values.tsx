@@ -2,26 +2,27 @@ import { motion } from "framer-motion";
 
 const values = [
   {
-    title: "Innovación",
-    description: "Buscamos constantemente nuevas formas de mejorar y crear valor.",
-    gradient: "from-pink-500 to-rose-500"
+    title: "Compromiso 24/7",
+    description: "Estamos disponibles todo el día, todos los días, para asegurar una logística sin interrupciones.",
+    gradient: "from-yellow-500 to-orange-500"
   },
   {
-    title: "Integridad",
-    description: "Actuamos con honestidad y transparencia en todo lo que hacemos.",
-    gradient: "from-purple-500 to-indigo-500"
+    title: "Seguridad Garantizada",
+    description: "Contamos con sistemas GPS en cada vehículo y seguros de carga para una operación confiable.",
+    gradient: "from-red-500 to-pink-500"
   },
   {
-    title: "Excelencia",
-    description: "Nos esforzamos por alcanzar los más altos estándares en cada proyecto.",
-    gradient: "from-blue-500 to-cyan-500"
+    title: "Eficiencia Operativa",
+    description: "Optimizamos rutas, tiempos y procesos para entregar con puntualidad y precisión.",
+    gradient: "from-blue-500 to-sky-500"
   },
   {
-    title: "Colaboración",
-    description: "Trabajamos juntos para lograr objetivos extraordinarios.",
-    gradient: "from-teal-500 to-emerald-500"
+    title: "Adaptabilidad Regional",
+    description: "Brindamos cobertura efectiva en Santiago y regiones, adaptándonos a cada necesidad.",
+    gradient: "from-green-500 to-emerald-500"
   },
 ];
+
 
 const Values = () => {
   return (

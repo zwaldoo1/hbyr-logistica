@@ -30,8 +30,8 @@ const Vision = () => {
             Aspiramos a liderar el cambio hacia un mundo más conectado y sostenible
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed">
-            Visualizamos un futuro donde la tecnología y la humanidad coexisten en perfecta armonía,
-            creando oportunidades infinitas para el crecimiento y el desarrollo sostenible.
+En HBYR visualizamos un futuro donde la tecnología y la experiencia humana se integran en perfecta sincronía,
+potenciando soluciones logísticas eficientes, sostenibles y seguras para impulsar el crecimiento de nuestros clientes y del país.
           </p>
         </motion.div>
       </div>
