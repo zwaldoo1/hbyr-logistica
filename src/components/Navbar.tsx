@@ -16,11 +16,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center">
-            <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              HBYR Logistica y Transporte
-            </span>
-          </a>
+<a href="/" className="flex items-center space-x-3">
+  <img src="/vehiculos/logo.png" alt="Logo HBYR" className="h-10 w-auto" />  
+  <span className="text-2xl font-bold bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent">
+    HBYR Logística y Transporte
+  </span>
+</a>
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
@@ -60,10 +61,11 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
-              <a className="w-full bg-gradient-to-r py-3 px-10 flex justify-center items-center from-purple-600 to-pink-600 text-white mt-4">
-                <Mail className="mr-2 h-4 w-4" />
-                Contáctanos
-              </a>
+<a className="flex items-center text-2xl font-bold bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent">
+  <Mail className="mr-2 h-5 w-5" />
+  Contáctanos
+</a>
+
             </div>
           </div>
         )}

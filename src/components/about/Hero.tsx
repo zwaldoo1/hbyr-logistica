@@ -2,13 +2,14 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-500 opacity-10 -z-10" 
-        style={{
-          backgroundImage: "linear-gradient(102.3deg, rgba(147,39,143,1) 5.9%, rgba(234,172,232,1) 64%, rgba(246,219,245,1) 89%)"
-        }}
-      />
+<section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+  <div 
+    className="absolute inset-0 bg-gradient-to-br from-[#001A9C] via-[#0033cc] to-[#FF6A00] opacity-10 -z-10" 
+    style={{
+      backgroundImage: "linear-gradient(135deg, #001A9C 10%, #0033cc 50%, #FF6A00 90%)"
+    }}
+  />
+
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -24,18 +25,15 @@ const Hero = () => {
           >
             Nuestra Misión
           </motion.span>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
-Transformando la logística  
-<br /> a través de la eficiencia y la confianza
+<h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent mb-6 leading-tight text-center">
+  Transformando la logística  
+  <br /> 
+  a través de la eficiencia y la confianza
+</h1>
 
-          </h1>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-8 leading-relaxed">
-<p>
-HBYR Logística y Transporte cuenta con más de 20 años de trayectoria en el rubro de la distribución profesional, consolidándose como un actor confiable y eficiente en el mercado. Nos especializamos en el transporte de alimentos e insumos clínicos, ofreciendo un servicio operativo 24/7 con una flota propia compuesta por 7 vehículos, adecuados para distintos tipos de carga.
-
+<p className="text-xl text-gray-800 max-w-3xl mx-auto mb-10 leading-relaxed text-center md:text-2xl">
+  HBYR Logística y Transporte posee más de 20 años de experiencia en el sector de la distribución profesional, destacándose como un referente confiable y eficiente en el mercado. Nos especializamos en el transporte de alimentos e insumos clínicos, brindando un servicio operativo disponible las 24 horas del día, los 7 días de la semana. Contamos con una flota propia compuesta por 7 vehículos, diseñados para atender diversos tipos de carga con la máxima seguridad y eficiencia.
 </p>
-
-          </p>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
