@@ -47,7 +47,7 @@ const vehicles = [
     title: "Camión Reparto Frigorífico",
     category: "Camiones",
     description: "Equipado con sistema de refrigeración, ideal para transporte de alimentos.",
-    image: "./vehiculos/camion.jpg"
+    image: "./vehiculos/camionfrio.jpg"
   },
   {
     id: 6,

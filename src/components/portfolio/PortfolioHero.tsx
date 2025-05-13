@@ -11,10 +11,10 @@ const PortfolioHero = () => {
           className="animate-fade-up"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            Nuestro Portafolio
+            Nuestro Flota de Vehiculos
           </h1>
           <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
-            Descubre cómo transformamos ideas en resultados destacados. Aquí algunos de nuestros proyectos más destacados.
+Conoce nuestra flota de vehículos diseñada para cubrir todo tipo de necesidades logísticas y de transporte. A continuación, te mostramos algunos de nuestros modelos más destacados.
           </p>
         </motion.div>
       </div>

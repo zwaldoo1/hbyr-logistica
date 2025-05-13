@@ -6,11 +6,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
   const menuItems = [
-    { label: "Home", path: "/" },
-    { label: "About Us", path: "/about" },
-    { label: "Services", path: "/services" },
-    { label: "Portfolio", path: "/portfolio" },
-    { label: "Contact", path: "/contact" },
+  { label: "Inicio", path: "/" },
+  { label: "Conócenos", path: "/about" },
+  { label: "Nuestra Flota", path: "/portfolio" },
+  { label: "Contacto", path: "/contact" }
   ];
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
