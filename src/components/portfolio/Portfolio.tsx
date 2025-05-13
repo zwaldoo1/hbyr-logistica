@@ -2,79 +2,78 @@ import { useState } from "react";
 import Button from "../ui/Button";
 import { motion } from "framer-motion";
 import { ExternalLink, MessageSquareIcon } from "lucide-react";
+
+
 // Define project categories
 const categories = [
   "Todos",
-  "Diseño Gráfico",
-  "Desarrollo Web",
-  "Campañas de Marketing",
+  "Camionetas",
+  "Camiones",
+  "Vehículos Especiales",
 ];
+
 // Sample projects data
-const projects = [
+const vehicles = [
   {
     id: 1,
-    title: "Rediseño de Marca Global",
-    category: "Diseño Gráfico",
-    description: "Renovación completa de identidad visual para empresa internacional",
-    image: "https://mexico.unir.net/wp-content/uploads/sites/6/2023/08/diseno_grafico.png",
-    link: "#",
+    title: "Camioneta Toyota Hilux 4x4",
+    category: "Camionetas",
+    description: "Ideal para terrenos difíciles, capacidad de carga de 1 tonelada.",
+    image: "./vehiculos/toyota.jpg"
   },
   {
     id: 2,
-    title: "App Móvil Financiera",
-    category: "Desarrollo Web",
-    description: "Aplicación de gestión financiera personal",
-    image: "https://codersfree.nyc3.cdn.digitaloceanspaces.com/posts/que-hace-un-desarrollador-web.jpg",
-    link: "#",
+    title: "Camión Hyundai HD78",
+    category: "Camiones",
+    description: "Camión mediano con caja cerrada. Perfecto para reparto urbano.",
+    image: "./vehiculos/camion.jpg"
   },
   {
     id: 3,
-    title: "Campaña Digital Innovadora",
-    category: "Campañas de Marketing",
-    description: "Estrategia multiplataforma con 300% ROI",
-    image: "https://ipmark.com/wp-content/uploads/UNANCOR-IMAGEN-1-pexels-kindel-media-7688336-1-800x445.jpg",
-    link: "#",
+    title: "Camioneta Nissan NP300",
+    category: "Camionetas",
+    description: "Eficiente y confiable para uso diario en obras y logística.",
+    image: "./vehiculos/nissan1.jpg"
   },
   {
     id: 4,
-    title: "Plataforma E-commerce",
-    category: "Desarrollo Web",
-    description: "Desarrollo de tienda online con más de 10,000 productos",
-    image: "https://www.qualityzoneinfotech.com/assets/img/E-Commerce.jpg",
-    link: "#",
+    title: "Camión Grúa HIAB",
+    category: "Vehículos Especiales",
+    description: "Camión con brazo hdráulico, ideal para carga pesada en altura.",
+    image: "./vehiculos/camion2.jpg"
   },
   {
     id: 5,
-    title: "Branding Startup Tech",
-    category: "Diseño Gráfico",
-    description: "Identidad visual completa para startup tecnológica",
-    image: "https://blogconexion.senati.edu.pe/wp-content/uploads/2024/04/Di%CC%81a-del-Disen%CC%83o-Gra%CC%81fico-01-scaled.jpg",
-    link: "#",
+    title: "Camión Reparto Frigorífico",
+    category: "Camiones",
+    description: "Equipado con sistema de refrigeración, ideal para transporte de alimentos.",
+    image: "./vehiculos/camion.jpg"
   },
   {
     id: 6,
-    title: "Campaña Redes Sociales",
-    category: "Campañas de Marketing",
-    description: "Estrategia integral en redes sociales",
-    image: "https://fidiaspro.com/wp-content/uploads/2023/03/Campana-de-redes-sociales.jpg",
-    link: "#",
+    title: "Camioneta Mitsubishi L200",
+    category: "Camionetas",
+    description: "Robusta y versátil para faenas exigentes y trayectos largos.",
+    image: "./vehiculos/camionetault.jpg"
   },
 ];
+
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState("Todos");
-  const filteredProjects = projects.filter(
-    (project) => activeCategory === "Todos" || project.category === activeCategory
-  );
+const filteredProjects = vehicles.filter(
+  (project) => activeCategory === "Todos" || project.category === activeCategory
+);
+
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-white to-purple-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            Nuestro Portafolio
+            Nuestra flota
           </h2>
           <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
-            Descubre cómo transformamos ideas en resultados destacados. Aquí algunos de nuestros proyectos más destacados.
+            HBYR pone a tu disposición una flota equipada para faenas exigentes, transporte especializado y operaciones de alto rendimiento.
           </p>
         </div>
         {/* Category Filter */}

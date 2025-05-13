@@ -1,31 +1,51 @@
 import { Camera, Code, Megaphone, Palette } from "lucide-react";
 import Button from "../ui/Button";
+// Importar íconos desde lucide-react
+import { Truck, CalendarCheck, Wrench, Users } from "lucide-react";
+
 const services = [
   {
-    icon: Palette,
-    title: "Diseño Gráfico",
-    description: "Llevamos tus ideas a la realidad con diseños impactantes y únicos",
-    items: ["Creación de logotipos", "Diseño publicitario", "Branding"],
+    icon: Truck,
+    title: "Gestión de Vehículos",
+    description: "Control total sobre tus camionetas y vehículos de trabajo",
+    items: [
+      "Reserva de vehículos en tiempo real",
+      "Disponibilidad y asignación eficiente",
+      "Historial de uso y kilometraje",
+    ],
   },
   {
-    icon: Megaphone,
-    title: "Marketing Digital",
-    description: "Potenciamos tu presencia online con estrategias efectivas",
-    items: ["Gestión de redes sociales", "Campañas de publicidad", "SEO"],
+    icon: CalendarCheck,
+    title: "Planificación y Coordinación",
+    description: "Organiza tareas y moviliza equipos de forma eficiente",
+    items: [
+      "Calendario de reservas",
+      "Control de entregas y retiros",
+      "Notificaciones automáticas a los trabajadores",
+    ],
   },
   {
-    icon: Code,
-    title: "Desarrollo Web",
-    description: "Creamos experiencias digitales modernas y funcionales",
-    items: ["Sitios responsivos", "E-commerce", "Aplicaciones"],
+    icon: Wrench,
+    title: "Mantenimiento Preventivo",
+    description: "Cuida tu flota con recordatorios y reportes inteligentes",
+    items: [
+      "Registro de incidentes",
+      "Alertas de mantención programada",
+      "Historial técnico de cada vehículo",
+    ],
   },
   {
-    icon: Camera,
-    title: "Fotografía y Video",
-    description: "Capturamos la esencia de tu marca con contenido visual profesional",
-    items: ["Producción de contenido", "Videos promocionales", "Fotografía profesional"],
+    icon: Users,
+    title: "Gestión de Personal",
+    description: "Asigna permisos y roles dentro de tu equipo de trabajo",
+    items: [
+      "Control de usuarios y administradores",
+      "Acceso seguro mediante autenticación",
+      "Historial de acciones por usuario",
+    ],
   },
 ];
+
 const Services = () => {
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-purple-50 to-white">
