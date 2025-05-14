@@ -8,37 +8,25 @@ import "swiper/css/effect-fade";
 
 const HeroBanner = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
+    <section className="relative min-h-[80vh] sm:min-h-screen flex items-center pt-16 overflow-hidden">
       {/* Carrusel de fondo */}
       <Swiper
         modules={[Autoplay, EffectFade]}
-        effect="slide"
+        effect="fade"
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop={true}
-        className="absolute inset-0 -z-10 h-full w-full"
-        fadeEffect={{ crossFade: true }}  // Aplica el efecto de desvanecimiento entre las imágenes
+        className="absolute inset-0 -z-10 w-full h-full max-h-screen"
+        fadeEffect={{ crossFade: true }}
       >
-        <SwiperSlide>
-          <img
-            src="/vehiculos/fondo1.jpg"
-            className="h-full w-full object-cover"  // Asegura que la imagen cubra el contenedor sin deformarse
-            alt="Fondo 1"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/vehiculos/fondo2.jpg"
-            className="h-full w-full object-cover"
-            alt="Fondo 2"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="/vehiculos/fondo3.jpg"
-            className="h-full w-full object-cover"
-            alt="Fondo 3"
-          />
-        </SwiperSlide>
+        {["fondo1.jpg", "fondo2.jpg", "fondo3.jpg"].map((img, i) => (
+          <SwiperSlide key={i}>
+            <img
+              src={`/vehiculos/${img}`}
+              className="w-full h-full object-cover object-center bg-black"
+              alt={`Fondo ${i + 1}`}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       {/* Contenido encima */}
@@ -75,24 +63,20 @@ const HeroBanner = () => {
             </div>
 
             {/* Botón "Conocer más" */}
-<div className="flex flex-col sm:flex-row gap-4">
-  <a
-    href="/about"  // Este es el id de la sección
-    className="group"
-  >
-    <Button
-      size="lg"
-      className="bg-gradient-to-r from-[#001A9C] to-[#FF6A00] text-white group hover:shadow-lg transition-all duration-300"
-    >
-      Conocer más
-      <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-    </Button>
-  </a>
-</div>
-
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a href="/about" className="group">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-[#001A9C] to-[#FF6A00] text-white group hover:shadow-lg transition-all duration-300"
+                >
+                  Conocer más
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
+            </div>
           </motion.div>
 
-          {/* Decorative shapes */}
+          {/* Efectos decorativos */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

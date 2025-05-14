@@ -56,11 +56,9 @@ const Footer = () => {
             <ul className="space-y-2">
               {[
                 { text: "Inicio", path: "/" },
-                { text: "Nosotros", path: "/about" },
-                { text: "Servicios", path: "/services" },
-                { text: "Portfolio", path: "/portfolio" },
+                { text: "Conócenos", path: "/about" },
+                { text: "Nuestra Flota", path: "/portfolio" },
                 { text: "Contacto", path: "/contact" },
-                { text: "Privacidad", path: "/privacy" },
               ].map((link) => (
                 <li key={link.path}>
                   <a
@@ -69,26 +67,6 @@ const Footer = () => {
                   >
                     {link.text}
                   </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Servicios</h3>
-            <ul className="space-y-2">
-              {[
-                "Diseño Gráfico",
-                "Marketing Digital",
-                "Desarrollo Web",
-                "Producción de Video",
-              ].map((service) => (
-                <li
-                  key={service}
-                  className="text-muted-foreground"
-                >
-                  {service}
                 </li>
               ))}
             </ul>
@@ -135,7 +113,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Lumos Creatives. Todos los derechos reservados.
+              © {currentYear} HBYR Logistica y Transporte. Todos los derechos reservados.
             </p>
             <div className="flex space-x-4 text-sm">
               <a

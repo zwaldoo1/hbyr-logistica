@@ -3,7 +3,7 @@ const ContactHero = () => {
     <section className="relative bg-gradient-to-b from-purple-50 to-white py-20 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent animate-fade-up">
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent animate-fade-up">
             Conecta con Nosotros
           </h1>
           <p className="text-lg text-gray-600 animate-fade-up [animation-delay:200ms]">

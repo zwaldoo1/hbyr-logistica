@@ -10,7 +10,7 @@ const PortfolioHero = () => {
           transition={{ duration: 0.5 }}
           className="animate-fade-up"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent">
             Nuestro Flota de Vehiculos
           </h1>
           <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">

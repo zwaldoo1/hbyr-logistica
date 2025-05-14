@@ -83,29 +83,7 @@ const Contact = () => {
                   )}
                 />
               </div>
-              <FormField
-                control={form.control}
-                name="service"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Servicio</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Selecciona un servicio" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem value="design">Diseño Gráfico</SelectItem>
-                        <SelectItem value="marketing">Marketing Digital</SelectItem>
-                        <SelectItem value="development">Desarrollo Web</SelectItem>
-                        <SelectItem value="media">Fotografía y Video</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+              
               <FormField
                 control={form.control}
                 name="message"

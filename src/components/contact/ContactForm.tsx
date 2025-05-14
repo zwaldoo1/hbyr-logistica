@@ -120,54 +120,6 @@ const ContactForm = () => {
 
               <FormField
                 control={form.control}
-                name="service"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Servicio de Interés</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Selecciona un servicio" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem value="design">Diseño Gráfico</SelectItem>
-                        <SelectItem value="marketing">Marketing Digital</SelectItem>
-                        <SelectItem value="development">Desarrollo Web</SelectItem>
-                        <SelectItem value="media">Fotografía y Video</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="budget"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Presupuesto Estimado</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Selecciona un rango" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem value="small">Menos de $1,000</SelectItem>
-                        <SelectItem value="medium">$1,000 - $5,000</SelectItem>
-                        <SelectItem value="large">$5,000 - $10,000</SelectItem>
-                        <SelectItem value="enterprise">Más de $10,000</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
                 name="message"
                 render={({ field }) => (
                   <FormItem>

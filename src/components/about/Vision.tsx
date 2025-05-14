@@ -2,20 +2,26 @@ import { motion } from "framer-motion";
 
 const Vision = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 opacity-5 -z-10"
-        style={{
-          clipPath: "polygon(0 15%, 100% 0, 100% 85%, 0 100%)"
-        }}
-      />
+    <section className="py-24 relative overflow-hidden min-h-[80vh] flex items-center">
+      {/* Imagen de fondo */}
+      <div className="absolute inset-0 -z-30">
+        <img
+          src="/vehiculos/fondo5.jpg"
+          alt="Fondo Visión"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+
+      {/* Capa oscura */}
+      <div className="absolute inset-0 bg-black/60 -z-20" />
+
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto"
+          className="max-w-4xl mx-auto text-center"
         >
           <motion.span 
             initial={{ x: -20, opacity: 0 }}
@@ -26,12 +32,14 @@ const Vision = () => {
           >
             Nuestra Visión
           </motion.span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#001A9C] to-[#FF6A00] drop-shadow-[2px_2px_6px_rgba(0,0,0,0.7)]">
             Aspiramos a liderar el cambio hacia un mundo más conectado y sostenible
           </h2>
-          <p className="text-xl text-gray-700 leading-relaxed">
-En HBYR visualizamos un futuro donde la tecnología y la experiencia humana se integran en perfecta sincronía,
-potenciando soluciones logísticas eficientes, sostenibles y seguras para impulsar el crecimiento de nuestros clientes y del país.
+
+          <p className="text-xl text-white drop-shadow-md leading-relaxed">
+            En HBYR visualizamos un futuro donde la tecnología y la experiencia humana se integran en perfecta sincronía,
+            potenciando soluciones logísticas eficientes, sostenibles y seguras para impulsar el crecimiento de nuestros clientes y del país.
           </p>
         </motion.div>
       </div>

@@ -23,11 +23,21 @@ const values = [
   },
 ];
 
-
 const Values = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100 -z-10" />
+    <section className="py-24 relative overflow-hidden min-h-[80vh]">
+      {/* Imagen de fondo */}
+      <div className="absolute inset-0 -z-30">
+        <img
+          src="/vehiculos/fondo6.jpg"
+          alt="Fondo Valores"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+
+      {/* Capa oscura */}
+      <div className="absolute inset-0 bg-black/60 -z-20" />
+
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.span
@@ -39,10 +49,12 @@ const Values = () => {
           >
             Nuestros Valores
           </motion.span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
+
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#001A9C] to-[#FF6A00] drop-shadow-[2px_2px_6px_rgba(0,0,0,0.7)]">
             Los principios que nos guían
           </h2>
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((value, index) => (
             <motion.div
@@ -54,11 +66,13 @@ const Values = () => {
               whileHover={{ scale: 1.05 }}
               className="relative group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br opacity-10 rounded-2xl transition-opacity duration-300 group-hover:opacity-20" />
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${value.gradient} opacity-10 rounded-2xl transition-opacity duration-300 group-hover:opacity-20`}
+              />
               <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
                 <div className={`h-12 w-12 rounded-lg mb-6 bg-gradient-to-br ${value.gradient}`} />
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
+                <p className="text-gray-800">{value.description}</p>
               </div>
             </motion.div>
           ))}
