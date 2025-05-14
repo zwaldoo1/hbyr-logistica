@@ -69,7 +69,7 @@ const filteredProjects = vehicles.filter(
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent">
             Nuestra flota
           </h2>
           <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">

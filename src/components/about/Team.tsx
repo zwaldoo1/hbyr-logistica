@@ -57,11 +57,12 @@ const Team = () => {
   <span className="inline-block px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 rounded-full text-sm font-semibold mb-4 dark:from-purple-800 dark:to-pink-800 dark:text-white">
     El Corazón de HBYR
   </span>
-  <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
+  <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent">
+
     Mentes creativas detrás de <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">HBYR</span>
   </h2>
   <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-    Un equipo diverso y apasionado, comprometido con la misión de crear soluciones digitales que transforman negocios.
+Un equipo diverso y comprometido, enfocado en ofrecer soluciones logísticas que impulsan la eficiencia, seguridad y crecimiento de nuestros clientes en todo el país.
   </p>
 </div>
 

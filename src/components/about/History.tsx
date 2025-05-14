@@ -36,8 +36,7 @@ Cada etapa ha sido impulsada por la misión de entregar soluciones confiables qu
           </p>
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-orange-600 to-pink-600 text-white font-medium rounded-full hover:shadow-lg transition-all cursor-pointer group"
-          >
+            className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-orange-600 to-pink-600 text-white font-medium rounded-full hover:shadow-lg transition-all cursor-pointer group">
             <span>Conoce más sobre nuestra historia</span>
             <svg
               className="w-5 h-5 transform transition-transform group-hover:translate-x-1"
