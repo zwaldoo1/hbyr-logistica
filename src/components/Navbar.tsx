@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
 <a href="/" className="flex items-center space-x-3">
-  <img src="/vehiculos/logo.png" alt="Logo HBYR" className="h-10 w-auto" />  
+  <img src="/vehiculos/logo1.png" alt="Logo HBYR" className="h-20 w-auto" />  
   <span className="text-2xl font-bold bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent">
     HBYR Logística y Transporte
   </span>
