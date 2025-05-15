@@ -78,7 +78,7 @@ const Footer = () => {
             <div className="space-y-2">
               <p className="flex items-center text-muted-foreground">
                 <Mail className="h-4 w-4 mr-2" />
-                info@lumoscreatives.com
+                administracion@logisticahbyr.com
               </p>
               <p className="flex items-center text-muted-foreground">
                 <Phone className="h-4 w-4 mr-2" />
@@ -86,7 +86,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center text-muted-foreground">
                 <MapPin className="h-4 w-4 mr-2" />
-                123 Creative Avenue
+                Avenida El Retiro 1275, Bodega A-14
               </p>
             </div>
             <form onSubmit={handleSubscribe} className="mt-4 space-y-2">
@@ -120,7 +120,6 @@ const Footer = () => {
                 href="/terms"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                Términos y Condiciones
               </a>
               <a
                 href="/privacy"
