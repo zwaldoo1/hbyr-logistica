@@ -53,59 +53,58 @@ const Contact = () => {
       </div>
       <div className="grid lg:grid-cols-2 gap-12 items-start">
         <div className="space-y-8">
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Nombre</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Tu nombre" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Correo electrónico</FormLabel>
-                      <FormControl>
-                        <Input type="email" placeholder="tu@email.com" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
-              
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Mensaje</FormLabel>
-                    <FormControl>
-                      <Textarea
-                        placeholder="Cuéntanos sobre tu proyecto"
-                        className="min-h-[120px]"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? "Enviando..." : "Enviar mensaje"}
-              </Button>
-            </form>
-          </Form>
+<form
+  action="https://formsubmit.co/administracion@logisticahbyr.com
+"
+  method="POST"
+  className="space-y-6"
+>
+  <div className="grid md:grid-cols-2 gap-6">
+    <div>
+      <label className="block text-sm font-medium">Nombre</label>
+      <input
+        type="text"
+        name="name"
+        placeholder="Tu nombre"
+        className="w-full input"
+        required
+      />
+    </div>
+    <div>
+      <label className="block text-sm font-medium">Correo electrónico</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="tu@email.com"
+        className="w-full input"
+        required
+      />
+    </div>
+  </div>
+
+  <div>
+    <label className="block text-sm font-medium">Mensaje</label>
+    <textarea
+      name="message"
+      placeholder="Cuéntanos sobre tu proyecto"
+      className="w-full min-h-[120px] textarea"
+      required
+    />
+  </div>
+
+  {/* Evitar CAPTCHA y redireccionar tras enviar */}
+  <input type="hidden" name="_captcha" value="false" />
+  <input
+    type="hidden"
+    name="_next"
+    value="https://logisticahbyr.com/"
+  />
+
+  <button type="submit" className="w-full button">
+    Enviar mensaje
+  </button>
+</form>
+
         </div>
         <div className="space-y-8">
           <div className="glass-card p-8 rounded-lg space-y-6">
@@ -116,7 +115,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5" />
-                <span>info@lumoscreatives.com</span>
+                <span>administracion@logisticahbyr.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5" />
@@ -124,13 +123,13 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5" />
-                <span>123 Creative Avenue, Ciudad Creativa</span>
+                <span>Avenida El Retiro 1275, Bodega A-14</span>
               </div>
             </div>
           </div>
           <div className="aspect-video rounded-lg overflow-hidden shadow-md">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-73.935242!3d40.730610!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjIiTiA3M8KwNTYnMDYuOSJX!5e0!3m2!1sen!2sus!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.9865272454663!2d-70.77080232495149!3d-33.39751569480198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c1a1a634e311%3A0x22cf9c7d5afaa526!2sAv.%20el%20Retiro%201275%2C%208640000%20Renca%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1747286628381!5m2!1ses-419!2scl"
               width="100%"
               height="100%"
               style={{ border: 0 }}

@@ -31,7 +31,7 @@ const ContactInfo = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-600">info@lumoscreatives.com</p>
+                  <p className="text-gray-600">administracion@logisticahbyr.com</p>
                 </div>
               </div>
               
@@ -51,7 +51,7 @@ const ContactInfo = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Ubicación</h3>
-                  <p className="text-gray-600">123 Creative Avenue, Ciudad Creativa</p>
+                  <p className="text-gray-600">Avenida El Retiro 1275, Bodega A-14, Region Metropolitana, Chile</p>
                 </div>
               </div>
             </div>

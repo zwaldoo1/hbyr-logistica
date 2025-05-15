@@ -7,8 +7,8 @@ const ContactHero = () => {
             Conecta con Nosotros
           </h1>
           <p className="text-lg text-gray-600 animate-fade-up [animation-delay:200ms]">
-            Estamos aquí para escucharte y ayudarte a hacer realidad tu próximo proyecto creativo.
-            Contáctanos y descubre cómo podemos trabajar juntos.
+Estamos aquí para escucharte y ayudarte a hacer realidad tu próximo proyecto con HBYR.
+Contáctanos y descubre cómo podemos construir juntos soluciones innovadoras y efectivas.
           </p>
         </div>
       </div>

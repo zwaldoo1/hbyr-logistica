@@ -12,7 +12,7 @@ const WhatsAppButton: React.FC = () => {
       <img
         src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
         alt="WhatsApp"
-        className="w-8 h-8"
+        className="w-15 h-12"
       />
     </a>
   );

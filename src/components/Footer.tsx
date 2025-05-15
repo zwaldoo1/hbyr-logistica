@@ -86,7 +86,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center text-muted-foreground">
                 <MapPin className="h-4 w-4 mr-2" />
-                Avenida El Retiro 1275, Bodega A-14
+                Avenida El Retiro 1275, Bodega A-14, Region Metropolitana, Chile 
               </p>
             </div>
             <form onSubmit={handleSubscribe} className="mt-4 space-y-2">

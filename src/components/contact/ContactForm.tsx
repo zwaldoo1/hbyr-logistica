@@ -59,87 +59,57 @@ const ContactForm = () => {
           </div>
 
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Nombre</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Tu nombre" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+<form
+  action="https://formsubmit.co/tucorreo@dominio.com"
+  method="POST"
+  className="space-y-6"
+>
+  <div className="grid md:grid-cols-2 gap-6">
+    <div>
+      <label className="block text-sm font-medium">Nombre</label>
+      <input
+        type="text"
+        name="name"
+        placeholder="Tu nombre"
+        className="w-full input"
+        required
+      />
+    </div>
+    <div>
+      <label className="block text-sm font-medium">Correo electrónico</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="tu@email.com"
+        className="w-full input"
+        required
+      />
+    </div>
+  </div>
 
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Correo electrónico</FormLabel>
-                      <FormControl>
-                        <Input type="email" placeholder="tu@email.com" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+  <div>
+    <label className="block text-sm font-medium">Mensaje</label>
+    <textarea
+      name="message"
+      placeholder="Cuéntanos sobre tu proyecto"
+      className="w-full min-h-[120px] textarea"
+      required
+    />
+  </div>
 
-                <FormField
-                  control={form.control}
-                  name="phone"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Teléfono</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Tu número de teléfono" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+  {/* Evitar CAPTCHA y redireccionar tras enviar */}
+  <input type="hidden" name="_captcha" value="false" />
+  <input
+    type="hidden"
+    name="_next"
+    value="https://tusitio.com/gracias.html"
+  />
 
-                <FormField
-                  control={form.control}
-                  name="company"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Empresa</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Nombre de tu empresa" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
+  <button type="submit" className="w-full button">
+    Enviar mensaje
+  </button>
+</form>
 
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Mensaje</FormLabel>
-                    <FormControl>
-                      <Textarea
-                        placeholder="Cuéntanos los detalles de tu proyecto"
-                        className="min-h-[120px]"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? "Enviando..." : "Enviar mensaje"}
-              </Button>
-            </form>
           </Form>
         </div>
       </div>
