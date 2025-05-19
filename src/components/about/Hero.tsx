@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -38,7 +37,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl text-white drop-shadow-md max-w-3xl mx-auto mb-10 leading-relaxed text-center md:text-2xl">
-            HBYR Logística y Transporte posee más de 20 años de experiencia en el sector de la distribución profesional, destacándose como un referente confiable y eficiente en el mercado. Nos especializamos en el transporte de alimentos e insumos clínicos, brindando un servicio operativo disponible las 24 horas del día, los 7 días de la semana. Contamos con una flota propia, diseñados para atender diversos tipos de carga con la máxima seguridad y eficiencia.
+            Logistica HBYR posee más de 20 años de experiencia en el sector de la distribución profesional, destacándose como un referente confiable y eficiente en el mercado. Nos especializamos en el transporte de alimentos e insumos clínicos, brindando un servicio operativo disponible las 24 horas del día, los 7 días de la semana. Contamos con una flota propia, diseñados para atender diversos tipos de carga con la máxima seguridad y eficiencia.
           </p>
 
           {/* Capa adicional decorativa de pulsación suave */}

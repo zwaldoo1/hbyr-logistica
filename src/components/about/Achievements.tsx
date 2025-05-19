@@ -4,28 +4,32 @@ import { Award, Users, Globe, Briefcase } from "lucide-react";
 const achievements = [
   {
     icon: <Award className="w-12 h-12 text-purple-600" />,
-    number: "50+",
-    label: "Premios Ganados",
-    description: "Reconocimientos internacionales por excelencia en diseño y desarrollo"
+    number: "15+",
+    label: "Premios Obtenidos",
+    description:
+      "Reconocimientos nacionales por excelencia en soluciones logísticas y transporte eficiente.",
   },
   {
     icon: <Users className="w-12 h-12 text-purple-600" />,
-    number: "1000+",
-    label: "Clientes Satisfechos",
-    description: "Empresas que confían en nuestra experiencia y profesionalismo"
+    number: "200+",
+    label: "Clientes Activos",
+    description:
+      "Empresas que confían en nuestra puntualidad, trazabilidad y compromiso.",
   },
   {
     icon: <Globe className="w-12 h-12 text-purple-600" />,
-    number: "30+",
+    number: "5",
     label: "Países Alcanzados",
-    description: "Presencia global con proyectos en múltiples continentes"
+    description:
+      "Cobertura logística en Chile, Argentina, Perú, Bolivia y Uruguay.",
   },
   {
     icon: <Briefcase className="w-12 h-12 text-purple-600" />,
-    number: "500+",
-    label: "Proyectos Completados",
-    description: "Soluciones exitosas entregadas a tiempo y dentro del presupuesto"
-  }
+    number: "2,000+",
+    label: "Operaciones Completadas",
+    description:
+      "Cargas entregadas exitosamente cumpliendo con altos estándares de seguridad y tiempo.",
+  },
 ];
 
 const Achievements = () => {

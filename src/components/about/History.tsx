@@ -27,32 +27,13 @@ const History = () => {
             Nuestra Historia
           </motion.span>
           <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#001A9C] to-[#FF6A00]">
-Logística HBYR 
+            Logística HBYR 
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed mb-12">
-Desde nuestros inicios hasta consolidarnos como referentes en logística y transporte,
-nuestra historia refleja años de esfuerzo, innovación y compromiso con la excelencia operativa.
-Cada etapa ha sido impulsada por la misión de entregar soluciones confiables que marquen la diferencia en el día a día de nuestros clientes y en el desarrollo de las industrias que servimos.
+            Desde nuestros inicios hasta consolidarnos como referentes en logística y transporte,
+            nuestra historia refleja años de esfuerzo, innovación y compromiso con la excelencia operativa.
+            Cada etapa ha sido impulsada por la misión de entregar soluciones confiables que marquen la diferencia en el día a día de nuestros clientes y en el desarrollo de las industrias que servimos.
           </p>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-orange-600 to-pink-600 text-white font-medium rounded-full hover:shadow-lg transition-all cursor-pointer group">
-            <span>Conoce más sobre nuestra historia</span>
-            <svg
-              className="w-5 h-5 transform transition-transform group-hover:translate-x-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </motion.div>
         </motion.div>
       </div>
     </section>
