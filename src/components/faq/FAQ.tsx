@@ -6,31 +6,33 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 import { MessageCircle } from "lucide-react";
+
 const FAQ = () => {
   const faqs = [
     {
-      question: "¿Cuáles son los tiempos de entrega de sus servicios?",
+      question: "¿Cuáles son los tiempos de entrega de sus servicios logísticos?",
       answer:
-        "Nuestros tiempos de entrega varían según el servicio. Por ejemplo, un diseño gráfico básico puede tomar de 3 a 5 días hábiles, mientras que un sitio web completo puede demorar de 4 a 6 semanas.",
+        "Los tiempos de entrega dependen del tipo de servicio y destino. Para envíos nacionales estándar, el tiempo estimado es de 24 a 72 horas. Para envíos internacionales, puede variar entre 5 a 10 días hábiles.",
     },
     {
-      question: "¿Cómo trabajan con sus clientes?",
-      answer:
-        "Nuestro proceso incluye reuniones iniciales para entender tus necesidades, presentación de propuestas personalizadas, desarrollo iterativo, y retroalimentación continua hasta la entrega final.",
+ question: "¿Qué medidas de seguridad utilizan para proteger la carga?",
+  answer:
+    "Implementamos estrictos protocolos de seguridad que incluyen monitoreo GPS, sellos de seguridad, control de acceso y personal capacitado para garantizar la integridad de cada envío durante todo el trayecto.",
     },
     {
-      question: "¿Puedo personalizar los servicios que ofrecen?",
+      question: "¿Puedo solicitar servicios personalizados de logística?",
       answer:
-        "¡Por supuesto! Adaptamos nuestras soluciones a tus objetivos. Puedes combinar servicios o solicitar características específicas según tus necesidades.",
+        "Claro que sí. Ofrecemos soluciones logísticas personalizadas que se adaptan a las necesidades específicas de tu empresa, incluyendo almacenaje, distribución y transporte especializado.",
     },
   ];
+
   return (
     <section className="py-16 px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12 animate-fade-up">
           <h2 className="text-3xl font-bold mb-4">Preguntas Frecuentes</h2>
           <p className="text-muted-foreground">
-            Encuentra respuestas rápidas a las dudas más comunes sobre nuestros servicios.
+            Encuentra respuestas rápidas a las dudas más comunes sobre nuestros servicios logísticos.
           </p>
         </div>
         <div className="glass-card p-6 md:p-8 rounded-lg mb-8">
@@ -60,4 +62,5 @@ const FAQ = () => {
     </section>
   );
 };
+
 export default FAQ;

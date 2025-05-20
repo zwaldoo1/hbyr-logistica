@@ -38,29 +38,30 @@ const HeroBanner = () => {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <div className="flex flex-col md:flex-row items-start justify-between gap-6 md:gap-10">
-              {/* Texto principal */}
-              <div className="text-left">
-                <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent mb-4 leading-tight">
-                  <span className="block text-4xl md:text-6xl font-bold bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent">
-                    HBYR
-                  </span>
-                  LOGÍSTICA Y TRANSPORTE
-                </h1>
-                <p className="text-xl md:text-2xl text-black drop-shadow-md max-w-xl">
-                  20 años brindando soluciones en transporte, distribución y almacenaje a nivel nacional
-                </p>
-              </div>
+<div className="flex flex-col md:flex-row items-start md:justify-between gap-6 md:gap-10">
+  {/* Texto principal */}
+  <div className="text-left order-2 md:order-1">
+    <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent mb-4 leading-tight">
+      <span className="block text-4xl md:text-6xl font-bold bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent">
+        HBYR
+      </span>
+      LOGÍSTICA Y TRANSPORTE
+    </h1>
+    <p className="text-xl md:text-2xl text-black drop-shadow-md max-w-xl">
+      20 años brindando soluciones en transporte, distribución y almacenaje a nivel nacional
+    </p>
+  </div>
 
-              {/* Logo a la derecha */}
-              <div className="flex-shrink-0 mt-6 md:mt-0">
-                <img
-                  src="/vehiculos/logo1.png"
-                  alt="Logo HBYR"
-                  className="max-w-[160px] md:max-w-[300px] h-auto"
-                />
-              </div>
-            </div>
+  {/* Logo debajo en móvil, a la derecha en escritorio */}
+  <div className="flex-shrink-0 mt-6 md:mt-0 w-full md:w-auto flex justify-center md:justify-start order-1 md:order-2">
+    <img
+      src="/vehiculos/logo1.png"
+      alt="Logo HBYR"
+      className="max-w-[160px] md:max-w-[300px] h-auto"
+    />
+  </div>
+</div>
+
 
             {/* Botón "Conocer más" */}
             <div className="flex flex-col sm:flex-row gap-4">

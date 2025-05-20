@@ -12,7 +12,7 @@ const ContactMap = () => {
             
             <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-73.935242!3d40.730610!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjIiTiA3M8KwNTYnMDYuOSJX!5e0!3m2!1sen!2sus!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.9865272454663!2d-70.77080232495149!3d-33.39751569480198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c1a1a634e311%3A0x22cf9c7d5afaa526!2sAv.%20el%20Retiro%201275%2C%208640000%20Renca%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1747286628381!5m2!1ses-419!2scl"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

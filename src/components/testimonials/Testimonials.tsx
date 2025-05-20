@@ -6,40 +6,38 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import Button from "../ui/Button";
-import { MessageCircle, Quote } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
-const testimonials = [
+// Casos de éxito reales en contexto de logística
+const caseStudies = [
   {
-    name: "María García",
-    role: "CEO de TechStart",
-    image: "/placeholder.svg",
-    text: "El equipo superó nuestras expectativas. Su creatividad y profesionalismo transformaron completamente nuestra presencia digital.",
+    title: "Optimización de rutas",
+    result: "Reducción del 35% en tiempos de entrega aplicando algoritmos de ruteo inteligente.",
+    icon: "🛣️",
   },
   {
-    name: "Carlos Rodríguez",
-    role: "Director de Marketing, InnovateMKT",
-    image: "/placeholder.svg",
-    text: "Un trabajo excepcional en nuestro rebranding. El impacto en nuestro engagement fue inmediato y significativo.",
+    title: "Gestión de flota",
+    result: "Mejoramos la eficiencia operativa en un 50% con monitoreo en tiempo real.",
+    icon: "🚛",
   },
   {
-    name: "Ana Martínez",
-    role: "Fundadora de EcoStyle",
-    image: "/placeholder.svg",
-    text: "Su enfoque estratégico y atención al detalle hicieron toda la diferencia. Estamos encantados con los resultados.",
+    title: "Digitalización de procesos",
+    result: "Automatización de órdenes y seguimiento, reduciendo errores humanos en un 80%.",
+    icon: "📲",
   },
   {
-    name: "Luis Torres",
-    role: "Director Creativo, DesignPro",
-    image: "/placeholder.svg",
-    text: "La mejor decisión que tomamos fue trabajar con ellos. Su equipo es increíblemente talentoso y dedicado.",
+    title: "Trazabilidad completa",
+    result: "Implementación de tracking avanzado, aumentando la satisfacción del cliente en un 90%.",
+    icon: "📦",
   },
 ];
-const Testimonials = () => {
+
+const CaseStudies = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-purple-50 to-white">
       <div className="container mx-auto px-4">
+        {/* Título principal */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -48,12 +46,14 @@ const Testimonials = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Lo que dicen nuestros clientes
+            Casos de éxito en logística
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Historias de éxito que destacan el impacto de nuestro trabajo.
+            Resultados reales de HBYR, donde tecnología y logística se combinan para maximizar eficiencia.
           </p>
         </motion.div>
+
+        {/* Carrusel */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -68,7 +68,7 @@ const Testimonials = () => {
             className="w-full max-w-5xl mx-auto"
           >
             <CarouselContent className="-ml-2 md:-ml-4 mb-8">
-              {testimonials.map((testimonial, index) => (
+              {caseStudies.map((item, index) => (
                 <CarouselItem
                   key={index}
                   className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/2"
@@ -78,30 +78,22 @@ const Testimonials = () => {
                       whileHover={{ scale: 1.02 }}
                       className="h-full p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                     >
-                      <Quote className="w-8 h-8 text-purple-500 mb-4 opacity-50" />
-                      <p className="text-gray-600 mb-6">{testimonial.text}</p>
-                      <div className="flex items-center gap-4">
-                        <Avatar>
-                          <AvatarImage src={testimonial.image} alt={testimonial.name} />
-                          <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
-                        </Avatar>
-                        <div>
-                          <h4 className="font-semibold text-gray-900">
-                            {testimonial.name}
-                          </h4>
-                          <p className="text-sm text-gray-500">{testimonial.role}</p>
-                        </div>
-                      </div>
+                      <div className="text-5xl mb-4 animate-bounce-slow">{item.icon}</div>
+                      <h4 className="text-xl font-semibold text-gray-900 mb-2">
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-600">{item.result}</p>
                     </motion.div>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious children className="hidden md:flex" />
-            <CarouselNext children className="hidden md:flex" />
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
           </Carousel>
         </motion.div>
-        
+
+        {/* Llamado a la acción */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -110,13 +102,13 @@ const Testimonials = () => {
           className="text-center mt-16"
         >
           <p className="text-xl text-gray-700 mb-6">
-            ¿Quieres ser nuestro próximo cliente feliz?
+            ¿Listo para optimizar tu operación logística con soluciones reales?
           </p>
           <Button
             size="lg"
             className="bg-gradient-to-r from-purple-600 to-pink-600 text-white group hover:shadow-lg transition-all duration-300"
           >
-            Escríbenos ahora
+            Contáctanos
             <MessageCircle className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
         </motion.div>
@@ -124,4 +116,5 @@ const Testimonials = () => {
     </section>
   );
 };
-export default Testimonials;
+
+export default CaseStudies;

@@ -45,12 +45,12 @@ const Values = () => {
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-block px-4 py-2 text-sm font-medium bg-white/90 text-purple-700 rounded-full mb-8 shadow-lg"
+            className="inline-block px-4 py-2 text-sm font-medium bg-gray-900/80 text-yellow-400 rounded-full mb-8 shadow-lg"
           >
             Nuestros Valores
           </motion.span>
 
-          <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#001A9C] to-[#FF6A00] drop-shadow-[2px_2px_6px_rgba(0,0,0,0.7)]">
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-teal-400 drop-shadow-[2px_2px_6px_rgba(0,0,0,0.7)]">
             Los principios que nos guían
           </h2>
         </div>
@@ -71,8 +71,8 @@ const Values = () => {
               />
               <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
                 <div className={`h-12 w-12 rounded-lg mb-6 bg-gradient-to-br ${value.gradient}`} />
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>
-                <p className="text-gray-800">{value.description}</p>
+                <h3 className="text-xl font-semibold text-yellow-800 mb-4">{value.title}</h3>
+                <p className="text-yellow-700">{value.description}</p>
               </div>
             </motion.div>
           ))}

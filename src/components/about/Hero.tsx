@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -25,18 +26,18 @@ const Hero = () => {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="inline-block px-4 py-2 text-sm font-medium bg-white/90 text-purple-700 rounded-full mb-8 shadow-lg"
+            className="inline-block px-4 py-2 text-sm font-medium bg-gray-800/80 text-yellow-400 rounded-full mb-8 shadow-lg"
           >
             Nuestra Misión
           </motion.span>
 
-          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent drop-shadow-[2px_2px_6px_rgba(0,0,0,0.7)] mb-6 leading-tight text-center">
+          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent drop-shadow-[2px_2px_6px_rgba(0,0,0,0.7)] mb-6 leading-tight text-center">
             Transformando la logística  
             <br /> 
             a través de la eficiencia y la confianza
           </h1>
 
-          <p className="text-xl text-white drop-shadow-md max-w-3xl mx-auto mb-10 leading-relaxed text-center md:text-2xl">
+          <p className="text-xl text-gray-200 drop-shadow-md max-w-3xl mx-auto mb-10 leading-relaxed text-center md:text-2xl">
             Logistica HBYR posee más de 20 años de experiencia en el sector de la distribución profesional, destacándose como un referente confiable y eficiente en el mercado. Nos especializamos en el transporte de alimentos e insumos clínicos, brindando un servicio operativo disponible las 24 horas del día, los 7 días de la semana. Contamos con una flota propia, diseñados para atender diversos tipos de carga con la máxima seguridad y eficiencia.
           </p>
 
