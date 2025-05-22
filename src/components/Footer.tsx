@@ -82,30 +82,48 @@ const Footer = () => {
               </p>
               <p className="flex items-center text-muted-foreground">
                 <Phone className="h-4 w-4 mr-2" />
-                +1 234 567 890
+                +569 7589 8797
               </p>
               <p className="flex items-center text-muted-foreground">
                 <MapPin className="h-4 w-4 mr-2" />
                 Avenida El Retiro 1275, Bodega A-14, Region Metropolitana, Chile 
               </p>
             </div>
-            <form onSubmit={handleSubscribe} className="mt-4 space-y-2">
-              <p className="text-sm text-muted-foreground">
-                Suscríbete a nuestro boletín
-              </p>
-              <div className="flex space-x-2">
-                <Input
-                  type="email"
-                  placeholder="Tu email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1"
-                />
-                <Button type="submit">
-                  <Send className="h-4 w-4" />
-                </Button>
-              </div>
-            </form>
+<form
+  action="https://formsubmit.co/administracion@logisticahbyr.com"
+  method="POST"
+  onSubmit={(e) => {
+    toast({
+      title: "¡Gracias por suscribirte!",
+      description: "Pronto recibirás nuestras últimas novedades.",
+    });
+    setEmail("");
+  }}
+  className="mt-4 space-y-2"
+>
+  {/* Campos ocultos de configuración */}
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_next" value="https://logisticahbyr.com/" />
+
+  <p className="text-sm text-muted-foreground">
+    Suscríbete a nuestro boletín
+  </p>
+  <div className="flex space-x-2">
+    <Input
+      type="email"
+      name="email"
+      placeholder="Tu email"
+      required
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      className="flex-1"
+    />
+    <Button type="submit">
+      <Send className="h-4 w-4" />
+    </Button>
+  </div>
+</form>
+
           </div>
         </div>
 

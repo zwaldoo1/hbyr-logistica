@@ -111,7 +111,7 @@ const Contact = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5" />
-                <span>+1 234 567 890</span>
+                <span>+56 9 7589 8797</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5" />

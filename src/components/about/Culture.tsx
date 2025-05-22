@@ -80,11 +80,6 @@ const Culture = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            "La cultura no es solo lo que decimos, es lo que hacemos. Cada día nos esforzamos por vivir nuestros valores
-            y crear un ambiente donde todos puedan prosperar y dar lo mejor de sí mismos."
-          </p>
-          <p className="mt-4 text-purple-600 dark:text-purple-400 font-medium">- Ana García, CEO</p>
         </motion.div>
       </div>
     </section>
