@@ -18,7 +18,7 @@ const HeroBanner = () => {
         className="absolute inset-0 -z-10 w-full h-full max-h-screen"
         fadeEffect={{ crossFade: true }}
       >
-        {["fondo1.jpg", "fondo2.jpg", "fondo3.jpg"].map((img, i) => (
+        {["nueva1.jpeg", "nueva5.jpeg", "nuevo9.jpeg","nueva10.jpeg"].map((img, i) => (
           <SwiperSlide key={i}>
             <img
               src={`/vehiculos/${img}`}
