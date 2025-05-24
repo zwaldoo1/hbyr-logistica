@@ -21,7 +21,7 @@ const HeroBanner = () => {
         {["nueva1.jpeg", "nueva5.jpeg", "nuevo9.jpeg","nueva10.jpeg"].map((img, i) => (
           <SwiperSlide key={i}>
             <img
-              src={`/vehiculos/${img}`}
+              src={`/vehiculos/${img}`} 
               className="w-full h-full object-cover object-center bg-black"
               alt={`Fondo ${i + 1}`}
             />

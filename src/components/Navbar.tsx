@@ -5,10 +5,13 @@ import Button from "../components/ui/Button";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  // Agregamos "Galería" al menú
   const menuItems = [
     { label: "Inicio", path: "/" },
     { label: "Conócenos", path: "/about" },
     { label: "Nuestra Flota", path: "/portfolio" },
+    { label: "Galería", path: "/galeria" }, // ✅ Nueva página agregada
     { label: "Contacto", path: "/contact" },
   ];
 
@@ -23,6 +26,7 @@ const Navbar = () => {
               Logística HBYR
             </span>
           </a>
+
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
@@ -42,6 +46,7 @@ const Navbar = () => {
               Contáctanos
             </a>
           </div>
+
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}

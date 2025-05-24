@@ -6,7 +6,7 @@ const Vision = () => {
       {/* Imagen de fondo */}
       <div className="absolute inset-0 -z-30">
         <img
-          src="/vehiculos/fondo5.jpg"
+          src="/vehiculos/zeta.jpeg"
           alt="Fondo Visión"
           className="w-full h-full object-cover object-center"
         />

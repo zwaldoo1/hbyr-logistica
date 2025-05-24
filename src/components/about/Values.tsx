@@ -1,25 +1,30 @@
 import { motion } from "framer-motion";
+import { Clock, ShieldCheck, Activity, MapPin } from "lucide-react";
 
 const values = [
   {
     title: "Compromiso 24/7",
     description: "Estamos disponibles todo el día, todos los días, para asegurar una logística sin interrupciones.",
-    gradient: "from-yellow-500 to-orange-500"
+    gradient: "from-yellow-500 to-orange-500",
+    icon: Clock,
   },
   {
     title: "Seguridad Garantizada",
     description: "Contamos con sistemas GPS en cada vehículo y seguros de carga para una operación confiable.",
-    gradient: "from-red-500 to-pink-500"
+    gradient: "from-red-500 to-pink-500",
+    icon: ShieldCheck,
   },
   {
     title: "Eficiencia Operativa",
     description: "Optimizamos rutas, tiempos y procesos para entregar con puntualidad y precisión.",
-    gradient: "from-blue-500 to-sky-500"
+    gradient: "from-blue-500 to-sky-500",
+    icon: Activity,
   },
   {
     title: "Adaptabilidad Regional",
     description: "Brindamos cobertura efectiva en Santiago y regiones, adaptándonos a cada necesidad.",
-    gradient: "from-green-500 to-emerald-500"
+    gradient: "from-green-500 to-emerald-500",
+    icon: MapPin,
   },
 ];
 
@@ -29,7 +34,7 @@ const Values = () => {
       {/* Imagen de fondo */}
       <div className="absolute inset-0 -z-30">
         <img
-          src="/vehiculos/fondo6.jpg"
+          src="/vehiculos/sicomono.jpeg"
           alt="Fondo Valores"
           className="w-full h-full object-cover object-center"
         />
@@ -56,26 +61,33 @@ const Values = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {values.map((value, index) => (
-            <motion.div
-              key={value.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.05 }}
-              className="relative group"
-            >
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${value.gradient} opacity-10 rounded-2xl transition-opacity duration-300 group-hover:opacity-20`}
-              />
-              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
-                <div className={`h-12 w-12 rounded-lg mb-6 bg-gradient-to-br ${value.gradient}`} />
-                <h3 className="text-xl font-semibold text-yellow-800 mb-4">{value.title}</h3>
-                <p className="text-yellow-700">{value.description}</p>
-              </div>
-            </motion.div>
-          ))}
+          {values.map((value, index) => {
+            const Icon = value.icon;
+            return (
+              <motion.div
+                key={value.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05 }}
+                className="relative group"
+              >
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${value.gradient} opacity-10 rounded-2xl transition-opacity duration-300 group-hover:opacity-20`}
+                />
+                <div className="bg-white bg-opacity-20 backdrop-blur-md p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                  <div
+                    className={`h-12 w-12 rounded-lg mb-6 flex items-center justify-center bg-gradient-to-br ${value.gradient}`}
+                  >
+                    <Icon className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-white mb-4">{value.title}</h3>
+                  <p className="text-white">{value.description}</p>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

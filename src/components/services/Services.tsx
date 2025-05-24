@@ -1,7 +1,5 @@
-import { Camera, Code, Megaphone, Palette } from "lucide-react";
-import Button from "../ui/Button";
-// Importar íconos desde lucide-react
 import { Truck, CalendarCheck, Wrench, Users } from "lucide-react";
+import Button from "../ui/Button";
 
 const services = [
   {
@@ -48,23 +46,30 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-purple-50 to-white">
-      <div className="max-w-7xl mx-auto">
+    <section
+      className="relative py-20 px-4 bg-cover bg-center"
+      style={{ backgroundImage: "url('/vehiculos/z4.jpeg')" }}
+    >
+      {/* Overlay oscuro para contraste */}
+      <div className="absolute inset-0 bg-black opacity-40"></div>
+
+      <div className="relative max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-up">
-          <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#001A9C] to-[#FF6A00]">
+        <div className="text-center mb-16 animate-fade-up text-white">
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-[#FFD700] to-[#FF8C00]">
             Nuestros Servicios
           </h2>
-          <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
+          <p className="text-white text-lg md:text-xl max-w-3xl mx-auto">
             Ofrecemos soluciones creativas y personalizadas para impulsar tu marca en cada etapa de su crecimiento.
           </p>
         </div>
+
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glass-card animate-fade-up"
+              className="bg-white bg-opacity-90 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glass-card animate-fade-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="flex flex-col items-center text-center">
@@ -85,8 +90,9 @@ const Services = () => {
             </div>
           ))}
         </div>
-        {/* CTA Button
-        <div className="text-center animate-fade-up" style={{ animationDelay: '400ms' }}>
+
+        {/* CTA Button (opcional) */}
+        {/* <div className="text-center animate-fade-up" style={{ animationDelay: '400ms' }}>
           <Button
             className="bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg hover:opacity-90 transition-opacity"
           >
@@ -97,4 +103,5 @@ const Services = () => {
     </section>
   );
 };
+
 export default Services;

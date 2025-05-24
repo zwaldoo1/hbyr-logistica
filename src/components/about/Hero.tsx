@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Imagen de fondo */}
       <div className="absolute inset-0 -z-30">
         <img
-          src="/vehiculos/fondo4.jpg"
+          src="/vehiculos/hola.jpeg"
           alt="Fondo Hero"
           className="w-full h-full object-cover object-center"
         />
