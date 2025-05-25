@@ -48,7 +48,7 @@ const Services = () => {
   return (
     <section
       className="relative py-20 px-4 bg-cover bg-center"
-      style={{ backgroundImage: "url('/vehiculos/z4.jpeg')" }}
+      style={{ backgroundImage: "url('/vehiculos/z111.jpeg')" }}
     >
       {/* Overlay oscuro para contraste */}
       <div className="absolute inset-0 bg-black opacity-40"></div>

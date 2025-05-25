@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Carousel,
@@ -8,6 +9,13 @@ import {
 } from "../ui/carousel";
 import Button from "../ui/Button";
 import { MessageCircle } from "lucide-react";
+
+// Imágenes del fondo
+const backgroundImages = [
+  "/vehiculos/z1.jpeg",
+  "/vehiculos/z2.jpeg",
+  "/vehiculos/z3.jpeg",
+];
 
 // Casos de éxito reales en contexto de logística
 const caseStudies = [
@@ -34,26 +42,44 @@ const caseStudies = [
 ];
 
 const CaseStudies = () => {
+  const [currentBg, setCurrentBg] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBg((prev) => (prev + 1) % backgroundImages.length);
+    }, 5000); // cambia cada 5 segundos
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="py-20 bg-gradient-to-b from-purple-50 to-white">
-      <div className="container mx-auto px-4">
+    <section
+      className="relative py-20 bg-cover bg-center transition-all duration-1000 ease-in-out"
+      style={{
+        backgroundImage: `url(${backgroundImages[currentBg]})`,
+      }}
+    >
+      {/* Capa oscura para mejor legibilidad */}
+      <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-10" />
+
+      {/* Contenido principal */}
+      <div className="relative z-20 container mx-auto px-4">
         {/* Título principal */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-12 text-white"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Casos de éxito en logística
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl mx-auto">
             Resultados reales de HBYR, donde tecnología y logística se combinan para maximizar eficiencia.
           </p>
         </motion.div>
 
-        {/* Carrusel */}
+        {/* Carrusel de casos */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -76,13 +102,15 @@ const CaseStudies = () => {
                   <div className="h-full">
                     <motion.div
                       whileHover={{ scale: 1.02 }}
-                      className="h-full p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                      className="h-full p-6 bg-white bg-opacity-90 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                     >
-                      <div className="text-5xl mb-4 animate-bounce-slow">{item.icon}</div>
+                      <div className="text-5xl mb-4 animate-bounce-slow">
+                        {item.icon}
+                      </div>
                       <h4 className="text-xl font-semibold text-gray-900 mb-2">
                         {item.title}
                       </h4>
-                      <p className="text-gray-600">{item.result}</p>
+                      <p className="text-gray-700">{item.result}</p>
                     </motion.div>
                   </div>
                 </CarouselItem>
@@ -101,7 +129,7 @@ const CaseStudies = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-center mt-16"
         >
-          <p className="text-xl text-gray-700 mb-6">
+          <p className="text-xl text-white mb-6">
             ¿Listo para optimizar tu operación logística con soluciones reales?
           </p>
           <Button
