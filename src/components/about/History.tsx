@@ -87,7 +87,7 @@ const Partners = () => {
             ¿Interesado en colaborar con nosotros? Estamos siempre abiertos a nuevas alianzas estratégicas.
           </p>
           <a href="/contact">
-            <button className="mt-6 px-8 py-3 bg-purple-600 text-white rounded-full font-medium hover:bg-purple-700 transition-colors">
+            <button className="mt-6 px-8 py-3 bg-red-600 text-white rounded-full font-medium hover:bg-orange-700 transition-colors">
               Conviértete en Socio
             </button>
           </a>

@@ -15,9 +15,9 @@ const FAQ = () => {
         "Los tiempos de entrega dependen del tipo de servicio y destino. Para envíos nacionales estándar, el tiempo estimado es de 24 a 72 horas. Para envíos internacionales, puede variar entre 5 a 10 días hábiles.",
     },
     {
- question: "¿Qué medidas de seguridad utilizan para proteger la carga?",
-  answer:
-    "Implementamos estrictos protocolos de seguridad que incluyen monitoreo GPS, sellos de seguridad, control de acceso y personal capacitado para garantizar la integridad de cada envío durante todo el trayecto.",
+      question: "¿Qué medidas de seguridad utilizan para proteger la carga?",
+      answer:
+        "Implementamos estrictos protocolos de seguridad que incluyen monitoreo GPS, sellos de seguridad, control de acceso y personal capacitado para garantizar la integridad de cada envío durante todo el trayecto.",
     },
     {
       question: "¿Puedo solicitar servicios personalizados de logística?",
@@ -53,7 +53,10 @@ const FAQ = () => {
           <p className="mb-6 text-lg">
             ¿Tienes más preguntas? Estamos aquí para ayudarte.
           </p>
-          <Button size="lg" className="group">
+          <Button
+            size="lg"
+            className="group bg-blue-600 hover:bg-blue-700 text-white transition-colors"
+          >
             <MessageCircle className="mr-2 h-4 w-4 transition-transform group-hover:scale-110" />
             Contáctanos ahora
           </Button>

@@ -73,7 +73,7 @@ const Services = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-red to-orange flex items-center justify-center mb-4">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-800">{service.title}</h3>

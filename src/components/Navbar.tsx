@@ -1,17 +1,15 @@
 import { useState } from "react";
 import { Menu, X, Mail } from "lucide-react";
-import Button from "../components/ui/Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Agregamos "Galería" al menú
   const menuItems = [
     { label: "Inicio", path: "/" },
     { label: "Conócenos", path: "/about" },
     { label: "Nuestra Flota", path: "/portfolio" },
-    { label: "Galería", path: "/galeria" }, // ✅ Nueva página agregada
+    { label: "Galería", path: "/galeria" },
     { label: "Contacto", path: "/contact" },
   ];
 
@@ -33,14 +31,14 @@ const Navbar = () => {
               <a
                 key={item.path}
                 href={item.path}
-                className="text-gray-600 hover:text-purple-600 transition-colors"
+                className="text-gray-600 hover:text-[#001A9C] transition-colors"
               >
                 {item.label}
               </a>
             ))}
             <a
               href="/contact"
-              className="flex justify-center items-center bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-md"
+              className="flex justify-center items-center bg-gradient-to-r from-[#001A9C] to-[#FF6A00] text-white px-4 py-2 rounded-md hover:opacity-90 transition"
             >
               <Mail className="mr-2 h-4 w-4" />
               Contáctanos
@@ -50,7 +48,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 rounded-md text-gray-600 hover:text-purple-600 hover:bg-gray-100"
+            className="md:hidden p-2 rounded-md text-gray-600 hover:text-[#001A9C] hover:bg-gray-100"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -64,7 +62,7 @@ const Navbar = () => {
                 <a
                   key={item.path}
                   href={item.path}
-                  className="block px-3 py-2 rounded-md text-gray-600 hover:text-purple-600 hover:bg-gray-50"
+                  className="block px-3 py-2 rounded-md text-gray-600 hover:text-[#001A9C] hover:bg-gray-50"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
@@ -72,7 +70,7 @@ const Navbar = () => {
               ))}
               <a
                 href="/contact"
-                className="flex items-center text-2xl font-bold bg-gradient-to-r from-[#001A9C] to-[#FF6A00] bg-clip-text text-transparent px-3 py-2 rounded-md justify-center"
+                className="flex items-center text-2xl font-bold bg-gradient-to-r from-[#001A9C] to-[#FF6A00] text-white px-4 py-2 rounded-md justify-center hover:opacity-90 transition"
                 onClick={() => setIsOpen(false)}
               >
                 <Mail className="mr-2 h-5 w-5" />

@@ -6,7 +6,7 @@ const PortfolioCTA = () => {
       <p className="text-xl text-gray-700 mb-6">
         ¿Interesado en lo que hacemos? ¡Contáctanos para tu próximo proyecto!
       </p>
-      <Button className="bg-gradient-to-r from-purple-600 to-pink-600 text-white  mb-3 text-lg hover:opacity-90 transition-opacity w-32 items-center">
+      <Button className="bg-gradient-to-r from-red-600 to-orange-600 text-white  mb-3 text-lg hover:opacity-90 transition-opacity w-32 items-center">
         Contáctanos
       </Button>
     </div>

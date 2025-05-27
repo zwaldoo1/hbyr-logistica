@@ -13,7 +13,7 @@ export const projects = [
     title: "Camioneta Toyota Hilux 4x4",
     category: "Camionetas",
     description: "Ideal para terrenos difíciles, capacidad de carga de 1 tonelada.",
-    image: "./vehiculos/1.jpeg",
+    image: "/vehiculos/1.jpeg",
     link: "#",
   },
   {
@@ -21,7 +21,7 @@ export const projects = [
     title: "Camión Hyundai HD78",
     category: "Camiones",
     description: "Camión mediano con caja cerrada. Perfecto para reparto urbano.",
-    image: "./vehiculos/2.jpeg",
+    image: "/vehiculos/2.jpeg",
     link: "#",
   },
   {
@@ -29,7 +29,7 @@ export const projects = [
     title: "Camioneta Nissan NP300",
     category: "Camionetas",
     description: "Eficiente y confiable para uso diario en obras y logística.",
-    image: "./vehiculos/3.jpeg",
+    image: "/vehiculos/3.jpeg",
     link: "#",
   },
   {
@@ -37,7 +37,7 @@ export const projects = [
     title: "Camión Grúa HIAB",
     category: "Vehículos Especiales",
     description: "Camión con brazo hidráulico, ideal para carga pesada en altura.",
-    image: "./vehiculos/4.jpeg",
+    image: "/vehiculos/4.jpeg",
     link: "#",
   },
   {
@@ -45,7 +45,7 @@ export const projects = [
     title: "Camión Reparto Frigorífico",
     category: "Camiones",
     description: "Equipado con sistema de refrigeración, ideal para transporte de alimentos.",
-    image: "./vehiculos/camionfrio.jpg",
+    image: "/vehiculos/11.jpeg",
     link: "#",
 
 

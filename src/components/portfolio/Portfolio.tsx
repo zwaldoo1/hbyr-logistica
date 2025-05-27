@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Button from "../ui/Button";
 import { motion } from "framer-motion";
-import { ExternalLink, MessageSquareIcon } from "lucide-react";
-
+import { ExternalLink, HeartOff, MessageSquareIcon } from "lucide-react";
 
 // Define project categories
 const categories = [
@@ -19,43 +18,43 @@ const vehicles = [
     title: "Camioneta Toyota Hilux 4x4",
     category: "Camionetas",
     description: "Ideal para terrenos difíciles, capacidad de carga de 1 tonelada.",
-    image: "./vehiculos/1.jpeg"
+    image: "/vehiculos/1.jpeg"
   },
   {
     id: 2,
     title: "Camión Hyundai HD78",
     category: "Camiones",
     description: "Camión mediano con caja cerrada. Perfecto para reparto urbano.",
-    image: "./vehiculos/2.jpeg"
+    image: "/vehiculos/2.jpeg"
   },
   {
     id: 3,
     title: "Camioneta Nissan NP300",
     category: "Camionetas",
     description: "Eficiente y confiable para uso diario en obras y logística.",
-    image: "./vehiculos/3.jpeg"
+    image: "/vehiculos/3.jpeg"
   },
   {
     id: 4,
     title: "Camión Grúa HIAB",
     category: "Vehículos Especiales",
     description: "Camión con brazo hdráulico, ideal para carga pesada en altura.",
-    image: "./vehiculos/4.jpeg"
+    image: "/vehiculos/4.jpeg"
   },
   {
     id: 5,
     title: "Camión Reparto Frigorífico",
     category: "Camiones",
     description: "Equipado con sistema de refrigeración, ideal para transporte de alimentos.",
-    image: "./vehiculos/11.jpeg"
+    image: "/vehiculos/11.jpeg"
   },
 ];
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState("Todos");
-const filteredProjects = vehicles.filter(
-  (project) => activeCategory === "Todos" || project.category === activeCategory
-);
+  const filteredProjects = vehicles.filter(
+    (project) => activeCategory === "Todos" || project.category === activeCategory
+  );
 
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-white to-purple-50">
@@ -78,8 +77,8 @@ const filteredProjects = vehicles.filter(
               variant={activeCategory === category ? "default" : "outline"}
               className={`rounded-full px-6 ${
                 activeCategory === category
-                  ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white"
-                  : "hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:text-white"
+                  ? "bg-gradient-to-r from-blue-600 to-green-600 text-white"
+                  : "hover:bg-gradient-to-r hover:from-blue-400 hover:to-green-400 hover:text-white"
               }`}
             >
               {category}
@@ -126,12 +125,14 @@ const filteredProjects = vehicles.filter(
           <p className="text-xl text-gray-700 mb-6">
             ¿Interesado en lo que hacemos? ¡Contáctanos para tu próximo proyecto!
           </p>
-          <Button
-            className="flex justify-center items-center gap-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg hover:opacity-90 transition-opacity"
-          >
-            <MessageSquareIcon/>
-            Contáctanos
-          </Button>
+<Button
+  onClick={() => window.location.href = "/contact"}
+  className="flex justify-center items-center gap-1 bg-gradient-to-r from-blue-600 to-green-600 text-white text-lg hover:opacity-90 transition-opacity"
+>
+  <MessageSquareIcon />
+  Contáctanos
+</Button>
+
         </div>
       </div>
     </section>

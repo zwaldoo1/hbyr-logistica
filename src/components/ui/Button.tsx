@@ -2,8 +2,10 @@ import * as React from "react";
 import clsx from "clsx";
 
 const buttonVariants = {
-  default: "bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:opacity-90 transition-opacity",
-  outline: "border border-purple-600 text-purple-600 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:text-white transition-colors",
+  default:
+    "bg-gradient-to-r from-blue-600 to-cyan-600 text-white hover:opacity-90 transition-opacity",
+  outline:
+    "border border-blue-600 text-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-600 hover:text-white transition-colors",
 };
 
 const buttonSizes = {

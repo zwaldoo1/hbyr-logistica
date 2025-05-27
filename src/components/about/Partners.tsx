@@ -4,17 +4,17 @@ import { Card, CardContent } from "../ui/card";
 const partners = [
   {
     name: "Watts",
-    logo: "/watts.jpg", // imagen ubicada en /public
+    logo: "/watts.jpg",
     description: "Marca chilena líder en jugos, alimentos y productos naturales",
   },
   {
     name: "Proalsa",
-    logo: "/proalza.jpg", // asegúrate de que el nombre del archivo sea correcto
+    logo: "/proalza.jpg",
     description: "Especialistas en alimentos y soluciones nutricionales",
   },
   {
     name: "Proexa",
-    logo: "/pro.jpg", // imagen ubicada en la carpeta /public
+    logo: "/pro.jpg",
     description: "Soluciones integrales en automatización y control industrial",
   },
 ];
@@ -87,7 +87,11 @@ const Partners = () => {
             ¿Interesado en colaborar con nosotros? Estamos siempre abiertos a nuevas alianzas estratégicas.
           </p>
           <a href="/contact">
-            <button className="mt-6 px-8 py-3 bg-purple-600 text-white rounded-full font-medium hover:bg-purple-700 transition-colors">
+            <button
+              className="mt-6 px-8 py-3 rounded-full font-medium text-white transition duration-300
+                         bg-gradient-to-r from-orange to-red
+                         hover:brightness-110"
+            >
               Conviértete en Socio
             </button>
           </a>
