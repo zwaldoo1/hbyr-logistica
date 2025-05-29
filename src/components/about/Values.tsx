@@ -22,7 +22,7 @@ const values = [
   },
   {
     title: "Adaptabilidad Regional",
-    description: "Brindamos cobertura efectiva en Santiago y regiones, adaptándonos a cada necesidad.",
+    description: "Ofrecemos cobertura efectiva en Santiago y regiones, alcanzando incluso los lugares más apartados para responder a cada necesidad.",
     gradient: "from-green-500 to-emerald-500",
     icon: MapPin,
   },

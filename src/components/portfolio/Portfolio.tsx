@@ -15,35 +15,30 @@ const categories = [
 const vehicles = [
   {
     id: 1,
-    title: "Camioneta Toyota Hilux 4x4",
     category: "Camionetas",
     description: "Ideal para terrenos difíciles, capacidad de carga de 1 tonelada.",
     image: "/vehiculos/1.jpeg"
   },
   {
     id: 2,
-    title: "Camión Hyundai HD78",
     category: "Camiones",
     description: "Camión mediano con caja cerrada. Perfecto para reparto urbano.",
     image: "/vehiculos/2.jpeg"
   },
   {
     id: 3,
-    title: "Camioneta Nissan NP300",
     category: "Camionetas",
     description: "Eficiente y confiable para uso diario en obras y logística.",
     image: "/vehiculos/3.jpeg"
   },
   {
     id: 4,
-    title: "Camión Grúa HIAB",
     category: "Vehículos Especiales",
     description: "Camión con brazo hdráulico, ideal para carga pesada en altura.",
     image: "/vehiculos/4.jpeg"
   },
   {
     id: 5,
-    title: "Camión Reparto Frigorífico",
     category: "Camiones",
     description: "Equipado con sistema de refrigeración, ideal para transporte de alimentos.",
     image: "/vehiculos/11.jpeg"

@@ -12,7 +12,7 @@ const advantages = [
   {
     icon: <Truck className="w-12 h-12 text-purple-400" />,
     title: "Flota moderna",
-    description: "Más de 100 vehículos equipados para entregas seguras y eficientes.",
+    description: "Disponemos de vehículos totalmente equipados para asegurar un servicio de entrega seguro y eficiente.",
   },
   {
     icon: <PackageCheck className="w-12 h-12 text-purple-400" />,
